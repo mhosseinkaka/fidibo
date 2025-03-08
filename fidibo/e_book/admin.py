@@ -1,5 +1,5 @@
 from django.contrib import admin
-from user.models import Customer
+from e_book.models import Book
 
 # Register your models here.
-admin.site.register(Customer)
+admin.site.register(Book)
