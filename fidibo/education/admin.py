@@ -1,5 +1,9 @@
-from django.contrib import admin
+from django.contrib.admin import ModelAdmin, register
 from education.models import Eduaction_book
 # Register your models here.
 
-admin.site.register(Eduaction_book)
+@register(Eduaction_book)
+class Eduaction_bookAdmin(ModelAdmin):
+    search_fields = ('name', 'author', 'level')
+    list_display = ['name', 'author', 'level']
+    
