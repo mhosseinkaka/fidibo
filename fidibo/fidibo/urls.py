@@ -22,5 +22,6 @@ urlpatterns = [
     path('book/', include('e_book.urls')),
     path('education/', include('education.urls')),
     path('magazine/', include('magazine.urls')),
-    path('v-book/', include('v_book.urls'))
+    path('v-book/', include('v_book.urls')),
+    path('user/', include('user.urls'))
 ]

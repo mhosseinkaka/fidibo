@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "8fca81ce-e4fd-4d51-a31e-fa2a9703f241",
+		"name": "fidibo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42911797"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/book/e-book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/book/e-book",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						"e-book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/user/add-book/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"alone fred\",\r\n    \"book_number\" : \"95632\",\r\n    \"author\" : \"fred011\",\r\n    \"price\" : 16900,\r\n    \"print_time\" : \"2025-03-13\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/user/add-book/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"add-book",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
